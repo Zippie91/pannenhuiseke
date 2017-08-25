@@ -1,3 +1,9 @@
 .container {
     margin-top: 60px;
 }
+
+#featuredCarousel img {
+    height: 400px;
+    width: auto;
+    background-color: black;
+}

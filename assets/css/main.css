@@ -1,6 +1,11 @@
 #featuredCarousel img {
-    height: 400px;
+    height: 350px;
     width: auto;
+}
+
+.icon-chevron-right {
+  height: 20px;
+  width: 20px;
 }
 
 /*

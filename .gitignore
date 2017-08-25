@@ -3,10 +3,7 @@
 ####################
 
 assets/js/vendor/**
-bootstrap/.*
-bootstrap/_*
-bootstrap/node_modules/
-bootstrap/dist/
+node_modules/
 
 ###########
 # Generic #

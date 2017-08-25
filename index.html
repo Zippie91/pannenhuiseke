@@ -14,18 +14,23 @@
             <img src="/pannenhuiseke/assets/images/PanLogo.png" height=30 width=auto alt="Pannenhuiseke VK" class="d-inline-block align-top"></img>
             Pannenhuiseke
         </a>
-        
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menuCollapsable" aria-controls="menuCollapsable">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="menuCollapsable">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Club</a></li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-target="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ploegen</a>
-                </li>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ploegen</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Heren 1</a>
+                      <a class="dropdown-item" href="#">Heren 2</a>
+                      <a class="dropdown-item" href="#">Dames </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Ampersand</a>
+                    </div>
+                  </li>
                 <li class="nav-item"><a href="#" class="nav-link">Leden</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Sponsors</a></li>
             </ul>
@@ -38,14 +43,13 @@
     </nav>
     
     <div class="container">
-        
+        <!-- Carousel - Featured -->
         <div class="carousel slide" id="featuredCarousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li class="active" data-target="#featuredCarousel" data-slide-to="0"></li>
                 <li data-target="#featuredCarousel" data-slide-to="1"></li>
                 <li data-target="#featuredCarousel" data-slide-to="2"></li>
             </ol>
-            
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="/pannenhuiseke/assets/images/featured1.jpg" alt="First Slide" class="d-block w-100">
@@ -71,6 +75,7 @@
             </a>
         </div>
         
+        <!-- Main -->
         <div class="text-center">
             <h1>Shrinking Bootstrap navbar</h1>
             <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>

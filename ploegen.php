@@ -30,7 +30,8 @@
                     </button>
                 </p>
                 <div class="row">
-                    <h1>Pannenhuiseke Heren 1</h1>
+                    <h1><?php echo "Ploegenpagina"; ?></h1>
+                    <p><?php print_r($_GET); ?></p>
                 </div>
             </div> <!-- /.col-12.col-md-9 -->
             

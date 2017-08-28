@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    
+    # Open correct PHP-file
+    RewriteRule ^([a-z0-9]+)$ $1.php [NC,L]
+    RewriteRule ^([a-z0-9]+)/$ $1.php [NC,L]
+    
+    # Open correct Team-PHP-file
+    RewriteRule ^ploegen/([a-z0-9]+)$ ploegen.php?ploeg=$1 [NC,L]
+    RewriteRule ^ploegen/([a-z0-9]+)/$ ploegen.php?ploeg=$1 [NC,L]
+</IfModule>

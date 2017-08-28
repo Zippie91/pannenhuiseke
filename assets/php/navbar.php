@@ -9,19 +9,19 @@
         <div class="collapse navbar-collapse" id="menuCollapsable">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item"><a href="/pannenhuiseke" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="club/" class="nav-link">Club</a></li>
+                <li class="nav-item"><a href="/pannenhuiseke/club" class="nav-link">Club</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ploegen</a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="ploegen/h1/">Heren 1</a>
-                      <a class="dropdown-item" href="ploegen/h2/">Heren 2</a>
-                      <a class="dropdown-item" href="ploegen/d1/">Dames </a>
+                      <a class="dropdown-item" href="/pannenhuiseke/ploegen/h1">Heren 1</a>
+                      <a class="dropdown-item" href="/pannenhuiseke/ploegen/h2">Heren 2</a>
+                      <a class="dropdown-item" href="/pannenhuiseke/ploegen/d1">Dames </a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/ploegen/ampersand/">Ampersand</a>
+                      <a class="dropdown-item" href="/pannenhuiseke/ploegen/ampersand">Ampersand</a>
                     </div>
                   </li>
-                <li class="nav-item"><a href="leden/" class="nav-link">Leden</a></li>
-                <li class="nav-item"><a href="Sponsors/" class="nav-link">Sponsors</a></li>
+                <li class="nav-item"><a href="/pannenhuiseke/leden" class="nav-link">Leden</a></li>
+                <li class="nav-item"><a href="/pannenhuiseke/sponsors" class="nav-link">Sponsors</a></li>
             </ul>
             <div class="dropdown-divider"></div>
             <form class="form-inline my-2 my-lg-0 justify-content-end">

@@ -77,3 +77,22 @@ footer {
     width: 50%; /* 6 columns */
   }
 }
+
+/*
+* Nieuws
+*/
+
+.news {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 0.3rem;
+}
+
+.card {
+  float: left;
+  width: 96.666%;
+  padding: .75rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border: 0;
+}

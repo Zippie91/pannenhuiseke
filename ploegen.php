@@ -67,5 +67,10 @@
     
     <!-- OffCanvas -->
     <script type="text/javascript" src="/pannenhuiseke/assets/js\offcanvas.js"></script>
+    
+    <!-- AJAX JSON - Sporta Connection -->
+    <script type="text/javascript">
+        
+    </script>
 </body>
 </html>

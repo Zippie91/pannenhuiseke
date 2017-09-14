@@ -13,13 +13,18 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ploegen</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="/pannenhuiseke/ploegen/h1">Heren 1</a>
-                  <a class="dropdown-item" href="/pannenhuiseke/ploegen/h2">Heren 2</a>
-                  <a class="dropdown-item" href="/pannenhuiseke/ploegen/d1">Dames </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/pannenhuiseke/ploegen/ampersand">Ampersand</a>
+                    <?php 
+                    $sth=$dbh->query("SELECT * FROM ploegen WHERE is_actief = 1");
+                    
+                    while(($ploeg = $sth->fetch()) != false) { 
+                    ?>
+                        <?php if ($ploeg['ploeg_verkort'] == 'ampersand') { ?>
+                            <div class="dropdown-divider"></div>
+                        <?php } ?>
+                        <a class="dropdown-item" href="/pannenhuiseke/ploegen/<?php echo $ploeg['ploeg_verkort']; ?>"><?php echo $ploeg['ploeg_naam']; ?></a>
+                    <?php } ?>
                 </div>
-              </li>
+            </li>
             <li class="nav-item"><a href="/pannenhuiseke/leden" class="nav-link">Leden</a></li>
             <li class="nav-item"><a href="/pannenhuiseke/sponsors" class="nav-link">Sponsors</a></li>
         </ul>

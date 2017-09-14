@@ -2,6 +2,7 @@
 # Project Specific #
 ####################
 
+*.ini
 assets/js/vendor/**
 node_modules/
 examples/

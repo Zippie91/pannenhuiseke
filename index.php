@@ -1,4 +1,4 @@
-<?php require_once("assets/php/connectdb.php"); ?>
+<?php require_once('assets/php/startup.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,22 +121,7 @@
                 
             </div> <!-- /.col-12.col-md-9 -->
             
-            <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
-                <div class="list-group">
-                    <h3>Volgende wedstrijden</h3>
-                    <h4>Heren 1</h4>
-                    <p>Test - Pannenhuiseke VK 1</p>
-                    <p>&nbsp;</p>
-                    <h4>Heren 2</h4>
-                    <p>Test - Pannenhuiseke VK 2</p>
-                    <p>&nbsp;</p>
-                    <h4>Dames</h4>
-                    <p>Test - Pannenhuiseke VK</p>
-                    <div class="dropdown-divider"></div>
-                    <h4>Ampersand</h4>
-                    <p>Test - Ampersand</p>
-                </div>
-            </div>
+            <?php include("assets/php/sidebar.php"); ?>
         </div> <!-- /.row.row-offcanvas.row-offcanvas-right -->
     </div> <!-- /.container -->
     

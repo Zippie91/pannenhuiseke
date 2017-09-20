@@ -13,15 +13,11 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ploegen</a>
                 <div class="dropdown-menu">
-                    <?php 
-                    $sth=$dbh->query("SELECT * FROM ploegen WHERE is_actief = 1");
-                    
-                    while(($ploeg = $sth->fetch()) != false) { 
-                    ?>
-                        <?php if ($ploeg['ploeg_verkort'] == 'ampersand') { ?>
+                    <?php foreach($actieve_ploegen as $ploeg ) { ?>
+                        <?php if ($ploeg->verkort == 'ampersand') { ?>
                             <div class="dropdown-divider"></div>
                         <?php } ?>
-                        <a class="dropdown-item" href="/pannenhuiseke/ploegen/<?php echo $ploeg['ploeg_verkort']; ?>"><?php echo $ploeg['ploeg_naam']; ?></a>
+                        <a class="dropdown-item" href="/pannenhuiseke/ploegen/<?php echo $ploeg->verkort; ?>"><?php echo $ploeg->naam; ?></a>
                     <?php } ?>
                 </div>
             </li>

@@ -30,22 +30,8 @@
                         <i class="fa fa-angle-double-left fa-3x toggleIcon" ></i>
                     </button>
                 </p>
-                <div class="container">
-                    <ul class="nav nav-tabs">
-                        <?php ?>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
-                    
-                    
+                <div class="row">
+                    <h1>Sponsors</h1>
                 </div>
             </div> <!-- /.col-12.col-md-9 -->
             

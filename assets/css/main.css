@@ -20,6 +20,11 @@ body {
   padding-top: 70px;
 }
 
+.nextgame {
+  cursor: pointer;
+}
+
+
 /*
  * Off Canvas
  * --------------------------------------------------
@@ -73,6 +78,7 @@ body {
     top: 0;
     width: 50%; /* 6 columns */
   }
+  
 }
 
 /* Nieuws

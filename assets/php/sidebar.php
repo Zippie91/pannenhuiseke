@@ -5,8 +5,15 @@
             <h4><?php echo $ploeg->naam; ?></h4>
             
             <?php $nextGame = $ploeg->nextGame(); ?>
-            <a href="#" id="<?php echo 'nextgame-' . $ploeg->verkort ?>" data-toggle="modal" data-target="#game-modal" data-game="<?php echo htmlspecialchars(json_encode($nextGame)); ?>"><p><small class="text-muted"><strong><?php echo $nextGame['datetime']; ?></strong></small><br />
-            <?php echo $nextGame['team_home'] . ' - ' . $nextGame['team_away']; ?></p></a>
+            <span class="nextgame" id="<?php echo 'nextgame-' . $ploeg->verkort ?>" data-toggle="modal" data-target="#game-modal" data-game="<?php echo htmlspecialchars(json_encode($nextGame)); ?>">
+                <p>
+                    <small class="text-muted">
+                        <strong><?php echo $nextGame['datetime']; ?></strong>
+                    </small>
+                    <br />
+                    <?php echo $nextGame['team_home'] . ' - ' . $nextGame['team_away']; ?>
+                </p>
+            </span>
             
         <?php } ?>
     </div>

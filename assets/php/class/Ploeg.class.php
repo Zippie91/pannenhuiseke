@@ -47,5 +47,20 @@ class Ploeg
         
         return $nextGame;
     }
+    
+    function GetZalen() {
+        $schema = (array)json_decode($this->ploeg_schema);
+        $zalen = array();
+        
+        foreach($schema as $game) {
+            $game = (array)$game;
+            
+            array_push($zalen, $game['location']);
+        }
+        
+        $zalen = array_values(array_unique($zalen));
+        
+        return $zalen;
+    }
 }
 ?>

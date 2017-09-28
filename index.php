@@ -141,51 +141,7 @@
     <!-- OffCanvas -->
     <script type="text/javascript" src="/pannenhuiseke/assets/js\offcanvas.js"></script>
     
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-            
-            $('#game-modal').on('show.bs.modal', function (event) {
-                var button = $(event.relatedTarget);
-                var game = button.data('game');
-                
-                var modal = $(this);
-                
-                modal.find('.modal-title').text(game['team_home'] + ' - ' + game['team_away']);
-                
-                ModalBody(game, modal.find('.modal-body'));
-            });
-            
-            //nextgame = JSON.stringify(nextgame, null, 2);
-        });
-        
-        function ModalBody(data, body) {
-            if (data['division'] == null) {
-                body.find('.modal-afdeling').hide();
-            } else {
-                body.find('p.modal-afdeling').html(data['division']);
-            }
-            
-            if (data['datetime'] == null) {
-                body.find('.modal-tijdstip').hide();
-            } else {
-                body.find('p.modal-tijdstip').html(data['day'] + ' ' + data['datetime']);
-            }
-            
-            if (data['location'] == null) {
-                body.find('.modal-locatie').hide();
-            } else {
-                body.find('p.modal-locatie').html(data['location']);
-            }
-            
-            if (data['result'] === "<span class=\"score\"></span>") {
-                body.find('.modal-uitslag').hide();
-            } else {
-                body.find('p.modal-uitslag').html(data['result']);
-            }
-            
-            body.find('p.modal-afdeling').find('span').attr('data-toggle', 'tooltip').attr('data-placement', 'left').tooltip();
-        }
-    </script>
+    <!-- Modal -->
+    <script type="text/javascript" src="/pannenhuiseke/assets/js/gamemodal.js"></script>
 </body>
 </html>

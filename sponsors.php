@@ -45,6 +45,8 @@
       </div>
     </footer>
     
+    <?php include("assets/php/game-modal.php"); ?>
+    
     <!-- Bootstrap - Core Javascript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -53,9 +55,7 @@
     <!-- OffCanvas -->
     <script type="text/javascript" src="/pannenhuiseke/assets/js\offcanvas.js"></script>
     
-    <!-- AJAX JSON - Sporta Connection -->
-    <script type="text/javascript">
-        
-    </script>
+    <!-- Modal -->
+    <script type="text/javascript" src="/pannenhuiseke/assets/js/gamemodal.js"></script>
 </body>
 </html>
